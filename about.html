@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="assets/style.css">
         <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
         <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 
 
@@ -17,20 +18,68 @@
                 background: url(assets/img/about-1.jpeg);
                 background-size: cover;
                 background-repeat: no-repeat;
+                background-position: center;
                 height: 200px;
                 width: 100%;
                 border-radius: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30px;
 
 
             }
             .credit .card{
-                width: 20%;
+                width: 15%;
                 height: 150px;
                 border-radius: 10px;
             }
             .credit .card h2{
-                color: #2caa4d;
-                margin-top: 10px;
+              color: #2caa4d;
+              margin-top: 20px;
+              margin-left: 30px;
+            }
+            .credit .card p{
+              margin-left: 30px;
+            }
+            .hope{
+              width: 400px;
+            }
+            .parent{
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+            .pretend{
+              display: flex;
+              flex-direction: column;
+            }
+            .wrap{
+              display: flex;
+              flex-direction: row;
+            }
+            .wrap-2{
+              display: flex;
+              flex-direction: row;
+            }
+            
+            .char-1{
+              background: rgb(203, 200, 200);
+              width: 300px;
+              padding: 50px;
+              border-radius: 20px;
+              margin: 20px;
+            }
+            .char-1 h1{
+              color: #2caa4d;
+              border: 2px solid #2caa4d;
+              border-radius: 50%;
+              height: 70px;
+              width: 70px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
             }
         </style>
     </head>
@@ -71,13 +120,58 @@
     <section>
         <div class="container">
             <h1 class="mt-4"><span style="color: #2caa4d;">About</span> Shifty</h1><hr>
-            <p>Shifty is a design and development company with an adaptive approach to challenges & problem solvings </p>
+            <p class="w-50 fs-20">Shifty is a design and development company with an adaptive approach to challenges & problem solvings </p>
             <div class="credit">
-                <div class="card card-1">
-                    <h2>5</h2>
-                    <p>Expert proffesionals</p>
+                  <div class="card card-1 ms-5">
+                      <h2>5</h2>
+                      <p>Expert <br> proffesionals</p>
+                  </div>
+                  <div class="card card-2">
+                      <h2>6</h2>
+                      <p>Glorious <br> Years</p>
+                  </div>
+                  <div class="card card-3">
+                      <h2>100</h2>
+                      <p>Successful <br> Projects</p>
+                  </div>
+                  <div class="card card-4 me-5">
+                      <h2>100%</h2>
+                      <p>Customer <br> Satisfaction</p>
+                  </div>
+            </div><hr>
+            <div class="parent">
+              <div class="hope">
+                <h1>Advantages</h1>
+                <p>At Shifty, we're just not a firm. We're your dedicated partner in success. Our Unwavering commitment sets us apart. Discover what makes us the right choice for your next project.</p>
+              </div>
+              <div class="pretend">
+                <div class="wrap">
+                  <div class="char-1">
+                    <h1><i class="fa-solid fa-arrow-up-right-dots"></i></h1>
+                    <h3>Proven Record </h3>
+                    <p>No two businesses are the same, god neither are cur solutions. We tailor ma services to meet your unique needs. ensuring that every project a perfect ht </p>
+                  </div>
+                  <div class="char-1">
+                    <h1><i class="fa-solid fa-puzzle-piece"></i></h1>
+                    <h3>Tailored Solutions </h3>
+                    <p>No two businesses are the sama, and neither are our solutions. We tailar our services to meet your unique needs ensuring that every project is a perfect fit. </p>
+                  </div>
                 </div>
+                <div class="wrap-2">
+                  <div class="char-1">
+                    <h1><i class="fa-solid fa-lightbulb"></i></i></h1>
+                    <h3>Innovation at Its Core </h3>
+                    <p>No two busewsses ore the same. ond neither ans out solutions. We toiler our services to meet your unique needs. ensuring that irvery project is a perfect fit </p>
+                  </div>
+                  <div class="char-1">
+                    <h1><i class="fa-solid fa-person"></i></i></h1>
+                    <h3>User-Centric Approach </h3>
+                    <p>No two businesses are the some, and neither are our solutions. We tuikr Dur services to meet your unique needs, ensuring that every project is a perfect fit</p>
+                  </div>
+                </div>
+              </div>
             </div>
+
         </div>
     </section>
 
