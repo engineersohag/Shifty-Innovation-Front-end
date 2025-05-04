@@ -8,6 +8,60 @@ body {
     background-color: #ffffff;
     color: #0F172A;
 }
+a{
+    text-decoration: none;
+}
+
+/*** Spinner ***/
+.spinner {
+    width: 40px;
+    height: 40px;
+    background: var(--text-success);
+    margin: 100px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+    0% {
+        -webkit-transform: perspective(120px)
+    }
+    50% {
+        -webkit-transform: perspective(120px) rotateY(180deg)
+    }
+    100% {
+        -webkit-transform: perspective(120px) rotateY(180deg) rotateX(180deg)
+    }
+}
+
+@keyframes sk-rotateplane {
+    0% {
+        transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    }
+    50% {
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+    }
+    100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+}
+
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
 .navbar {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     padding: 15px 0;
@@ -71,6 +125,9 @@ body {
 .text-success{
     color: var(--text-success)!important;
 }
+.text-dark{
+    color: var(--dark)!important;
+}
 .bg-success{
     background: var(--text-success)!important;
     color: #fff !important;
@@ -78,7 +135,15 @@ body {
 .cursor-pointer{
     cursor: pointer;
 }
-
+.btn-primary{
+    background: var(--text-success);
+    border: 0;
+    outline: 0;
+    transition: .4s;
+}
+.btn-primary:hover{
+    background: var(--dark);
+}
 
 .services-section {
     padding: 80px 0;
@@ -248,6 +313,45 @@ body {
     }
     
 
+/*** Testimonial ***/
+.testimonial-carousel .owl-dots {
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.testimonial-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: #DDDDDD;
+    border-radius: 2px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-dot.active {
+    width: 30px;
+    background: var(--text-success);
+}
+
+.testimonial-carousel .owl-item.center {
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-carousel .owl-item .testimonial-item {
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-item.center .testimonial-item {
+    background: #FFFFFF !important;
+    box-shadow: 0 0 30px #DDDDDD;
+}
+
+
 /*-- about.html css --*/
 .about-bg{
     width: 100%;
@@ -276,54 +380,82 @@ body {
     font-size: 3.5rem;
     font-weight: 700;
 }
-.team h2{
-    width: 50%;
-    margin: auto;
-    font-weight: 700;
-    font-size: 45px;
-    color: var(--dark);
+
+/*** Team ***/
+.team-item {
+    transition: .5s;
 }
-.team .card{
-    height: 420px;
-    transition: .4s;
-}
-.team .profile{
-    position: relative;
-}
-.team .profile img{
-    height: 310px;
-    transform: scale(1);
-    transition: .4s;
-}
-.team .profile .icon{
-    width: 100%;
-    height: 0;
-    background: rgba(0, 0, 0, .4);;
+
+.team-social {
     position: absolute;
-    bottom: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
     left: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
+    justify-content: center;
+    transition: .5s;
+}
+
+.team-social a.btn {
+    position: relative;
+    margin: 0 3px;
+    margin-top: 100px;
+    opacity: 0;
+}
+
+.team-item:hover {
+    box-shadow: 0 0 30px #DDDDDD;
+}
+
+.team-item:hover .team-social {
+    background: rgba(9, 30, 62, .7);
+}
+
+.team-item:hover .team-social a.btn:first-child {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s 0s;
+}
+
+.team-item:hover .team-social a.btn:nth-child(2) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .05s;
+}
+
+.team-item:hover .team-social a.btn:nth-child(3) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .1s;
+}
+
+.team-item:hover .team-social a.btn:nth-child(4) {
+    opacity: 1;
+    margin-top: 0;
+    transition: .3s .15s;
+}
+
+.team-item .team-img img{
+    height: 300px;
+    transition: .5s;
+}
+
+.team-item:hover .team-img img{
+    transform: scale(1.15);
+}
+
+.pagination a{
+    color: var(--text-success);
     transition: .4s;
 }
-.team .profile .icon a{
-    display: none;
-    transition: .4s;
+.pagination a.active{
+    background: var(--text-success);
+    border: 0;
 }
-.team .profile .icon a i{
-    font-size: 24px;
-    color: #fff;
-    background: var(--dark);
-    padding: 13px;
-    border-radius: 50%;
-}
-.team .card:hover .profile .icon{
-    height: 100%;
-}
-.team .card:hover .profile .icon a{
-    display: inline-block;
+.pagination a:hover{
+    color: var(--dark);
 }
     
     
