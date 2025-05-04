@@ -1,3 +1,8 @@
+:root{
+    --text-success: #2CAA4D;
+    --dark: #051F38;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #ffffff;
@@ -63,6 +68,16 @@ body {
     right: 0px;
 }
 
+.text-success{
+    color: var(--text-success)!important;
+}
+.bg-success{
+    background: var(--text-success)!important;
+    color: #fff !important;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
 
 
 .services-section {
@@ -232,6 +247,84 @@ body {
       background-color: #28a065;
     }
     
+
+/*-- about.html css --*/
+.about-bg{
+    width: 100%;
+    height: auto;
+    background: url('img/about-bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about-bg .bg-layer{
+    width: 100%;
+    height: 100%;
+    padding: 90px 0;
+    background: rgba(0, 0, 0, .4);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.about-bg .bg-layer h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--dark);
+}
+#about-us h2{
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.team h2{
+    width: 50%;
+    margin: auto;
+    font-weight: 700;
+    font-size: 45px;
+    color: var(--dark);
+}
+.team .card{
+    height: 420px;
+    transition: .4s;
+}
+.team .profile{
+    position: relative;
+}
+.team .profile img{
+    height: 310px;
+    transform: scale(1);
+    transition: .4s;
+}
+.team .profile .icon{
+    width: 100%;
+    height: 0;
+    background: rgba(0, 0, 0, .4);;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: .4s;
+}
+.team .profile .icon a{
+    display: none;
+    transition: .4s;
+}
+.team .profile .icon a i{
+    font-size: 24px;
+    color: #fff;
+    background: var(--dark);
+    padding: 13px;
+    border-radius: 50%;
+}
+.team .card:hover .profile .icon{
+    height: 100%;
+}
+.team .card:hover .profile .icon a{
+    display: inline-block;
+}
     
     
 .footer-wave {
