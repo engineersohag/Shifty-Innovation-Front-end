@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifty - Shifting the Digital Landscape</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+
+    <style>
+        .section-title {
+          font-size: 2.5rem;
+          font-weight: 700;
+        }
+
+        .highlight {
+          background-color: #2CAA4D;
+          color: #fff;
+          border-radius: 50%;
+          width: 60px;
+          height: 60px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          position: relative;
+          z-index: 2;
+        }
+
+        .step-title {
+          font-size: 1.25rem;
+          font-weight: 600;
+          margin-top: 1rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .step-desc {
+          font-size: 0.95rem;
+        }
+
+        .timeline-wrapper {
+          position: relative;
+          margin-top: 60px;
+          margin-bottom: 60px;
+        }
+
+        .timeline-line {
+          position: absolute;
+          top: 30px;
+          left: 0;
+          width: 100%;
+          height: 1px;
+          background-color: #666;
+          z-index: 1;
+        }
+
+        .step-box {
+          margin-bottom: 3rem;
+          position: relative;
+        }
+
+        .service-list li {
+          margin-bottom: 0.5rem;
+          font-size: 1.1rem;
+        }
+
+        /* Responsive Fixes */
+        @media (max-width: 767.98px) {
+          .timeline-line {
+            display: none;
+          }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                <img src="assets/img/logo.png" style="height: 39px;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-5" id="navbarNav">
+                <ul class="navbar-nav w-100 position-relative">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link d-flex align-items-center active" href="javascript:void(0)" id="servicesDropdown" role="button" data-bs-toggle="dropdown">Services <i class="ph ph-caret-down fs-20 ms-2"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="service-details-ui.html">UI/UX Design</a></li>
+                            <li><a class="dropdown-item" href="service-details-app.html">Mobile App Development</a></li>
+                            <li><a class="dropdown-item" href="service-details.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="service-details-it.html">IT Outsourcing</a></li>
+                            <li><a class="dropdown-item" href="service-details-no.html">CMS Development</a></li>
+                            <li><a class="dropdown-item active" href="service-details-staff.html">DevOps Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link " href="solutions.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link " href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link " href="blog.html">Blog</a></li>
+                    <li class="nav-item me-5"><a class="nav-link " href="career.html">Career</a></li>
+                    <li class="nav-item position-absolute right-0"><a class="btn btn-dark rounded-pill px-4 " href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="about-bg">
+        <div class="bg-layer">
+            <div class="wrap">
+                <h1 class="text-white">IT Staff Augmentation</h1>
+                <h5>Home <span><i class="fa-regular fa-circle-dot"></i></span> IT Staff Augmentation</h5>
+            </div>
+        </div>
+    </main>
+
+    <section class="service-details">
+        
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-12">
+                    <img src="assets/img/bg-layer/It-staff.png" alt="Service Details" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+          <!-- Top Text Section -->
+          <div class="row">
+            <div class="col-md-8">
+              <h1 class="section-title mb-4 text-success">Best IT Staff Augmentation Services</h1>
+              <p class="" style="text-align: justify;">
+                At Shifty Innovation, we transform your vision into impactful IT Staff Augmentation solutions. Our expert team specializes in providing skilled professionals tailored to your project needs, ensuring seamless integration and enhanced productivity. Whether you're a startup, educational institute, e-commerce platform, or corporate enterprise — we deliver reliable talent that supports your business goals and accelerates your growth.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p class="">
+                Technologies We Work With: Flutter, React Native, Kotlin, Swift, Java (Android), Firebase, RESTful APIs, SQLite, JSON, and more.
+              </p>
+              <ul class="list-unstyled service-list">
+                <li><i class="fa-solid fa-circle-check text-success me-2"></i> Custom Mobile Apps Development</li>
+                <li><i class="fa-solid fa-circle-check text-success me-2"></i> E-Commerce Website</li>
+                <li><i class="fa-solid fa-circle-check text-success me-2"></i> Bug fixing </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Steps with Timeline -->
+          <div class="timeline-wrapper">
+            <div class="timeline-line d-none d-md-block"></div>
+            <div class="row justify-content-center">
+              <div class="col-12 col-sm-6 col-md-3 step-box">
+                <div class="highlight">01</div>
+                <div class="step-title">Project Research</div>
+                <div class="step-desc">Excuse Deal say over contain performance from comparison new melancholy themselves.</div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3 step-box">
+                <div class="highlight">02</div>
+                <div class="step-title">Best Concept</div>
+                <div class="step-desc">Excuse Deal say over contain performance from comparison new melancholy themselves.</div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3 step-box">
+                <div class="highlight">03</div>
+                <div class="step-title">Design Implement</div>
+                <div class="step-desc">Excuse Deal say over contain performance from comparison new melancholy themselves.</div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-3 step-box">
+                <div class="highlight">04</div>
+                <div class="step-title">Final Result</div>
+                <div class="step-desc">Excuse Deal say over contain performance from comparison new melancholy themselves.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Start -->
+    <div class="container-fluid py-3 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container">
+            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-success text-uppercase">Projects</h5>
+                <h1 class="mb-0">What Project we recetly completed</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
+                <div class="testimonial-item bg-light my-4 position-relative">
+                    <img src="assets/img/projects/3.jpg" alt=".." class="img-fluid">
+                    <div class="project-test-link">
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4 position-relative">
+                    <img src="assets/img/projects/7.jpg" alt=".." class="img-fluid">
+                    <div class="project-test-link">
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4 position-relative">
+                    <img src="assets/img/projects/5.jpg" alt=".." class="img-fluid">
+                    <div class="project-test-link">
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="testimonial-item bg-light my-4 position-relative">
+                    <img src="assets/img/projects/4.jpg" alt=".." class="img-fluid">
+                    <div class="project-test-link">
+                        <a href=""><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <section class="service-about bg-success py-5 mt-5 wow fadeInUp" data-wow-delay="0.4s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h3 class="pb-4 fw-bold">❓ Frequently Asked Questions (FAQ)</h3>
+                    <div class="accordion border-0 rounded-0" id="accordionExample">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                          <button class="accordion-button fw-bold text-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            1. What is IT Staff Augmentation?
+                          </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            IT Staff Augmentation is a flexible outsourcing strategy where you hire skilled IT professionals from an external provider to temporarily extend your in-house team and meet specific project requirements.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                          <button class="accordion-button fw-bold text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2. How quickly can you provide qualified IT staff?
+                          </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Typically, we can present suitable candidates within a few days after understanding your project needs, depending on the required skill set and availability.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button fw-bold text-dark collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3. Can augmented staff work remotely or onsite?
+                          </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            Yes, our professionals can work either remotely or onsite, based on your preference and project demands to ensure seamless collaboration.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4">
+                    <h2 class="fw-bold mb-3">What we do?</h2>
+                    <p class="mb-4" style="text-align: justify;">Before placing an order for IT Staff Augmentation services, we first discuss your project requirements and team needs in detail to understand the specific skills and expertise required. Then, we identify and propose qualified professionals from our talent pool who perfectly match your criteria. Once you approve the candidates, we integrate them seamlessly into your existing team to ensure smooth collaboration and maximize project success.</p>
+                    <a href="" class="btn btn-dark px-5 py-2 rounded-0 border-0">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="services-section wow fadeInUp" data-wow-delay="0.6s">
+        <div class="container">
+            <div class="d-flex align-items-center"> 
+             <h2 class="main-title">Most popular services</h2>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="none" viewBox="0 0 28 28"><defs><linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-color="#1f2432"/><stop offset="100%" stop-color="#2caa4d"/></linearGradient></defs><path fill="url(#gradient)" d="M17.499 22.871H9.978c-.29 0-.521.232-.521.52v1.216c0 .289.231.52.52.52H17.5c.29 0 .52-.231.52-.52v-1.215c0-.29-.23-.52-.52-.52"/><path fill="url(#gradient)" d="M14.927 8.437a1.37 1.37 0 0 0-.637-.579v6.22c.637.231 1.07.839 1.07 1.533 0 .897-.723 1.62-1.62 1.62-.896 0-1.62-.723-1.62-1.62 0-.694.464-1.302 1.07-1.533v-6.19c-.26.115-.462.317-.635.549l-3.877 6.769c-.26.434-.347.954-.231 1.446l.925 4.6c.058.231.26.434.521.434h7.724c.26 0 .463-.174.52-.434l.926-4.6a1.95 1.95 0 0 0-.231-1.446z"/><path fill="url(#gradient)" d="M26.064 5.427a1.42 1.42 0 0 0 1.418-1.417 1.42 1.42 0 0 0-1.418-1.417c-.608 0-1.128.405-1.33.954h-9.605v-.926h-2.806v.926H2.748c-.202-.55-.723-.954-1.33-.954A1.42 1.42 0 0 0 0 4.01a1.42 1.42 0 0 0 1.417 1.417c.608 0 1.129-.405 1.331-.954h5.988a12.95 12.95 0 0 0-7.81 10.5H0v2.807h2.806v-2.806h-.781c.636-5.38 4.918-9.662 10.298-10.299v.781h2.806v-.78c5.38.636 9.662 4.917 10.299 10.298h-.782v2.806h2.807v-2.806h-.926a12.95 12.95 0 0 0-7.81-10.501h6.016c.203.578.723.954 1.331.954"/></svg>
+
+                         <h4>UI/UX Design</h4>
+                        <p>We craft UI/UX designs that strike the right balance between pleasing appeal and robust functionality.</p>
+                        <a href="service-details-ui.html" class="see-more">See more →</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="none" viewBox="0 0 28 28"><defs><linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-color="#1f2432"/><stop offset="100%" stop-color="#2caa4d"/></linearGradient></defs><path fill="url(#gradient)" d="M7.598 4.353h3.61a.36.36 0 0 0 .362-.362V3.63H7.236v.361a.36.36 0 0 0 .362.362"/><path fill="url(#gradient)" d="M3.629 22.771c0 .599.485 1.084 1.083 1.084h9.39c.6 0 1.084-.485 1.084-1.084V4.713c0-.598-.485-1.083-1.083-1.083h-1.806v.361c0 .599-.486 1.084-1.084 1.084h-3.61A1.083 1.083 0 0 1 6.518 3.99V3.63H4.712c-.598 0-1.083.485-1.083 1.083zm8.306-.361a.361.361 0 0 1 0 .722H6.88a.36.36 0 0 1 0-.722zM8.068 6.264a.361.361 0 0 1 .512.51L6.05 9.302a.363.363 0 0 1-.515.005.36.36 0 0 1 .005-.515zm-2.888.722.722-.722a.361.361 0 0 1 .51.51l-.722.723a.361.361 0 0 1-.51-.511"/><path fill="url(#gradient)" d="M23.819 14.45a.15.15 0 0 1-.094.116l-1.394.556a.37.37 0 0 0-.217.249 6.8 6.8 0 0 1-.773 1.864.37.37 0 0 0-.02.325l.592 1.386h-.001a.14.14 0 0 1-.018.145q-.46.547-1.007 1.004a.13.13 0 0 1-.137.014l-1.387-.592a.37.37 0 0 0-.33.022 6.6 6.6 0 0 1-1.859.772.37.37 0 0 0-.25.217l-.556 1.398a.14.14 0 0 1-.111.09c-.112.011-.235.011-.35.018v-2.553a5.75 5.75 0 0 0 0-11.478v-2.56l.346.022a.15.15 0 0 1 .115.094l.556 1.398a.37.37 0 0 0 .25.216 6.6 6.6 0 0 1 1.86.773c.1.06.222.067.328.022l1.383-.592a.14.14 0 0 1 .148.017q.547.46 1.004 1.004a.14.14 0 0 1 .011.145l-.588 1.383a.37.37 0 0 0 .021.325c.35.58.61 1.207.773 1.864.029.112.11.205.217.249l1.394.556c.05.018.086.063.094.116q.064.707 0 1.415"/></svg>
+
+                         <h4>Mobile App Development</h4>
+                        <p>We use the latest technologies to build top-notch mobile applications that reach your expectations.</p>
+                        <a href="service-details-app.html" class="see-more">See more →</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="none" viewBox="0 0 54 54"><defs><linearGradient id="gradient" x1="0" y1="0" x2="54" y2="0" gradientUnits="userSpaceOnUse"><stop offset="0%" stop-color="#1f2432"/><stop offset="100%" stop-color="#2caa4d"/></linearGradient></defs><path fill="url(#gradient)" d="M51.262 38.163H31.069c-.505-.05-.971.624-1.294.92h-6.59c-.317-.296-.789-.969-1.294-.92H1.7a.92.92 0 0 0-.918.92 5.515 5.515 0 0 0 5.507 5.514h40.385a5.515 5.515 0 0 0 5.506-5.515.92.92 0 0 0-.917-.92"/><path fill="url(#gradient)" fill-rule="evenodd" d="m23.992 36.16-.156-.147a2.77 2.77 0 0 0-1.91-.772H2.653V12.263a3.673 3.673 0 0 1 3.672-3.676h4.675c1.606 0 3.028.003 4.5.006 3.099.007 6.416.015 12.125-.006 3.774.013 6.057-.008 7.927-.026 2.302-.022 3.977-.038 7.035.026h4.122a3.673 3.673 0 0 1 3.671 3.676v22.978H31.105c-.752-.008-1.488.335-2.065.92zm10.802-14.413-3.846-3.176a.84.84 0 0 1-.474-.599.79.79 0 0 1 .2-.69c.346-.366.82-.41 1.205-.106l4.772 3.921c.246.154.36.484.36.736 0 .256-.115.59-.366.742l-4.756 3.613c-.165.151-.39.151-.49.151-.244 0-.565-.124-.706-.394-.22-.366-.196-.936.228-1.27zm-19.585.828 4.755 3.613c.166.152.391.152.49.152.244 0 .566-.124.707-.394a.99.99 0 0 0-.233-1.276l-3.868-2.923 3.846-3.176a.84.84 0 0 0 .475-.599.79.79 0 0 0-.2-.69c-.348-.366-.815-.415-1.211-.102l-4.767 3.917c-.246.154-.36.484-.36.737.001.256.116.59.366.741m8.512 5.547c-.085 0-.258 0-.418-.15a1.09 1.09 0 0 1-.394-1.1l.016-.05 4.436-11.063c.17-.362.46-.568.783-.568a.8.8 0 0 1 .372.096c.21.11.37.284.454.489a.88.88 0 0 1-.026.72L24.52 27.527a.86.86 0 0 1-.8.594" clip-rule="evenodd"/></svg>
+
+                          <h4>Web Development</h4>
+                        <p>Delivering user-friendly, feature-rich, and scalable desktop applications with modern technologies.</p>
+                        <a href="service-details.html" class="see-more">See more →</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="none" viewBox="0 0 28 28"><defs><linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-color="#1f2432"/><stop offset="100%" stop-color="#2caa4d"/></linearGradient></defs><path fill="url(#gradient)" fill-rule="evenodd" d="M10.82 3.63H5.253c-.897 0-1.624.727-1.624 1.623v5.568c0 .896.727 1.624 1.624 1.624h5.567c.897 0 1.624-.728 1.624-1.624V5.253c0-.896-.727-1.623-1.624-1.623m5.84 0h5.567c.897 0 1.624.727 1.624 1.623v5.568c0 .896-.727 1.624-1.624 1.624H16.66a1.624 1.624 0 0 1-1.624-1.624V5.253c0-.896.727-1.623 1.624-1.623m3.945 11.369 3.284 3.283a1.644 1.644 0 0 1 0 2.324l-3.283 3.284a1.645 1.645 0 0 1-2.324 0l-3.284-3.284a1.646 1.646 0 0 1 0-2.324L18.282 15a1.646 1.646 0 0 1 2.323 0m-15.352.038h5.567c.897 0 1.624.727 1.624 1.624v5.567c0 .897-.727 1.624-1.624 1.624H5.253a1.624 1.624 0 0 1-1.624-1.624v-5.567c0-.897.727-1.624 1.624-1.624" clip-rule="evenodd"/></svg>
+
+                         <h4>No Code Development</h4>
+                        <p>We simplify software creation with visual development environments and drag-and-drop interfaces.</p>
+                        <a href="service-details-no.html" class="see-more">See more →</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="none" viewBox="0 0 28 28"><defs><linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-color="#1f2432"/><stop offset="100%" stop-color="#2caa4d"/></linearGradient></defs><path fill="url(#gradient)" fill-rule="evenodd" d="M6.666 19.056h-.76c-.871 0-1.701.375-2.277 1.03V5.389A2.28 2.28 0 0 1 5.907 3.11h.759c.21 0 .38.17.38.38v15.185c0 .21-.17.38-.38.38M24.769 4.89a.39.39 0 0 0 .119-.279.4.4 0 0 0-.12-.284L23.674 3.23a.39.39 0 0 0-.561-.002l-.56.558 1.66 1.66zm-2.755-.565-.563.562 1.66 1.66.562-.563zm-5.233 5.24 4.136-4.136 1.66 1.66-4.135 4.136zm-.479.693-.145 1.292c-.009.079.02.157.076.214a.25.25 0 0 0 .217.076l1.294-.148q.023-.003.043-.011l.03-.01-1.495-1.495a1 1 0 0 0-.02.082M6.017 24.37h18.492c.21 0 .38-.17.38-.38V8.807a.38.38 0 0 0-.38-.38h-2.202l-3.604 3.606a1.5 1.5 0 0 1-.874.416c-.508.057-.816.093-1.01.116-.296.034-.327.038-.393.038h-5.584v4.176h9.111V14.88a.38.38 0 1 1 .76 0v5.694c0 .42-.34.76-.76.76H12.36a.38.38 0 1 1 0-.76h2.658v-3.037h-4.176v5.315a.38.38 0 1 1-.76 0v-10.25H8.945a.38.38 0 1 1 0-.76h6.495a1 1 0 0 1-.036-.375l.144-1.293c.037-.336.19-.65.43-.886l.863-.862H7.805v10.25c0 .629-.51 1.139-1.14 1.139h-.758a2.28 2.28 0 0 0-2.278 2.278v.083a2.354 2.354 0 0 0 2.388 2.194m13.937-6.833h-4.176v3.037h4.176z"/></svg>
+
+                        <h4>IT Outsourcing</h4>
+                        <p>Benefit from our IT outsourcing services to streamline project completion within budget.</p>
+                        <a href="service-details-it.html" class="see-more">See more →</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54" fill="none" viewBox="0 0 28 28"><defs><linearGradient id="gradient" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox"><stop offset="0%" stop-color="#1f2432"/><stop offset="100%" stop-color="#2caa4d"/></linearGradient></defs><path fill="url(#gradient)" fill-rule="evenodd" d="M14.566 13.942h-.03c-2.455 0-4.451-2.08-4.451-4.637 0-2.558 1.996-4.638 4.451-4.638 2.456 0 4.452 2.08 4.452 4.638a4.69 4.69 0 0 1-1.289 3.271 4.32 4.32 0 0 1-3.133 1.366m5.89-.864h-.018a3.3 3.3 0 0 1-1.18-.22 6.1 6.1 0 0 0 1.098-3.556c0-1.268-.367-2.44-.998-3.413a3.5 3.5 0 0 1 1.098-.181c1.95 0 3.543 1.659 3.543 3.69 0 2.02-1.593 3.68-3.543 3.68m-2.836 1.964a7 7 0 0 1 2.846-.591c2.847 0 5.254 1.63 5.254 3.566 0 1.61-1.62 2.202-3.121 2.402-.055-2.431-2.096-4.51-4.98-5.377m-6.17-.01a7.1 7.1 0 0 0-2.837-.581c-2.846 0-5.254 1.63-5.254 3.566 0 1.61 1.611 2.192 3.112 2.402.046-2.431 2.087-4.51 4.98-5.387m-2.808-1.954h-.028c-1.95 0-3.533-1.66-3.533-3.68 0-2.031 1.583-3.69 3.533-3.69.384 0 .75.067 1.098.181a6.24 6.24 0 0 0-.997 3.413c0 1.335.412 2.565 1.107 3.557a3.3 3.3 0 0 1-1.18.219m5.894 2.934c-3.626 0-6.69 2.055-6.69 4.488 0 3.147 5.035 3.147 6.69 3.147 2.872 0 6.69-.325 6.69-3.127 0-2.444-3.064-4.508-6.69-4.508" clip-rule="evenodd"/></svg>
+                        <h4>IT Staff Augmentation</h4>
+                        <p>Expand your development capabilities while avoiding recruitment processes and long-term commitments.</p>
+                        <a href="service-details-staff.html" class="see-more">See more →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="assets/img/rsz_hi-tech.png" alt="" class="img-fluid">
+                    <img src="assets/img/rsz_olive.png" alt="" class="img-fluid">
+                    <img src="assets/img/rsz_fiverr.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+    
+    
+    <footer class="footer-wave pt-5">
+        <div class="container text-white">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-md-4 mb-4">
+            <div class="d-flex align-items-center mb-2">
+                <!-- Logo placeholder -->
+                <img src="assets/img/footer-logo.png" alt="Logo" style="height:40px;" class="me-2" /> 
+            </div>
+            <p>
+                Shifty helps businesses to build and grow with versatile 
+                software solutions and services.
+            </p>
+            <!-- Social icons -->
+            <div class="d-flex">
+                <a href="https://www.facebook.com/profile.php?id=61575630226553" target="_blank" class="me-3 text-white" style="text-decoration:none;">
+                <i class="ph ph-facebook-logo" style="font-size:32px; text-decoration:none;"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/shifty-innovation/" target="_blank" class="me-3 text-white" style="text-decoration:none;">
+                <i class="ph ph-linkedin-logo" style="font-size:32px; text-decoration:none;"></i>
+                </a>
+                <a href="javascript:void(0)" class="me-3 text-white" style="text-decoration:none;">
+                <i class="ph ph-x-logo" style="font-size:32px; text-decoration:none;"></i>
+                </a>
+                <a href="https://www.youtube.com/@shiftyinnovation" target="_blank" class="text-white" style="text-decoration:none;">
+                <i class="ph ph-youtube-logo" style="font-size:32px; text-decoration:none;"></i>
+                </a>
+            </div>
+            </div>
+            <!-- Company Links -->
+            <div class="col-md-2 mb-4">
+            <h6 class="fw-bold">Company</h6>
+            <ul class="list-unstyled">
+                <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+                <li><a href="service-policy.html.html" class="text-white text-decoration-none">Service Policy</a></li>
+                <li><a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+            </ul>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-2 mb-4">
+            <h6 class="fw-bold">Quick Links</h6>
+            <ul class="list-unstyled">
+                <li><a href="javascript:void(0)" class="text-white text-decoration-none">Products</a></li>
+                <li><a href="javascript:void(0)" class="text-white text-decoration-none">Installation</a></li>
+                <li><a href="javascript:void(0)" class="text-white text-decoration-none">Customization</a></li>
+                <li><a href="javascript:void(0)" class="text-white text-decoration-none">Documentation</a></li>
+            </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="col-md-4 mb-4">
+            <h6 class="fw-bold">Contact Us</h6>
+            <p class="mb-1">
+                Level: 07, H: 110, R: 20, South Banasree, <br/>
+                Dhaka 1019, Bangladesh
+            </p>
+            <p class="mb-0">+8801787472354</p>
+            </div>
+        </div>
+        </div>
+        <!-- Footer bottom text (if you want) -->
+        <div class="text-center text-white py-3" style="opacity: 0.6;">
+        &copy; 2025 Shifty Innovation. All Rights Reserved.
+        </div>
+    </footer>
+    
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/wow/wow.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- -- Custom JS -- -->
+    <script src="assets/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifty - Shifting the Digital Landscape</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Libraries Stylesheet -->
+    <link href="assets/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/lib/animate/animate.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <style>
+    .job-box {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      margin-bottom: 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .job-info h5 {
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+    .job-info p {
+      margin: 0;
+      color: #555;
+    }
+    .apply-btn {
+      background-color: #d8f8fd;
+      color: #555;
+      border: none;
+      padding: 6px 16px;
+      border-radius: 8px;
+    }
+    .apply-btn:hover {
+      background-color: #c4f0fb;
+    }
+    .filters input,
+    .filters select {
+      height: 40px;
+      font-size: 14px;
+    }
+    .filters button {
+      height: 40px;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .section-header img {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+    .section-header h4 {
+      font-weight: 700;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="index.html">
+                <img src="assets/img/logo.png" style="height: 39px;" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-5" id="navbarNav">
+                <ul class="navbar-nav w-100 position-relative">
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link d-flex align-items-center" href="javascript:void(0)" id="servicesDropdown" role="button" data-bs-toggle="dropdown">Services <i class="ph ph-caret-down fs-20 ms-2"></i></a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="service-details-ui.html">UI/UX Design</a></li>
+                            <li><a class="dropdown-item" href="service-details-app.html">Mobile App Development</a></li>
+                            <li><a class="dropdown-item" href="service-details.html">Web Development</a></li>
+                            <li><a class="dropdown-item" href="service-details-it.html">IT Outsourcing</a></li>
+                            <li><a class="dropdown-item" href="service-details-no.html">CMS Development</a></li>
+                            <li><a class="dropdown-item" href="service-details-staff.html">DevOps Services</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link " href="solutions.html">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link " href="team.html">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                    <li class="nav-item me-5"><a class="nav-link active" href="career.html">Career</a></li>
+                    <li class="nav-item position-absolute right-0"><a class="btn btn-dark rounded-pill px-4 " href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="about-bg">
+        <div class="bg-layer">
+            <div class="wrap">
+                <h1 class="text-white">Career</h1>
+                <h5>Home <span><i class="fa-regular fa-circle-dot"></i></span> Career</h5>
+            </div>
+        </div>
+    </main>
+    <!-- https://templately.com/page/careerly-landing-page-2 -->
+
+    <div class="container py-5">
+      <div class="section-header">
+        <img src="assets/img/job-search.png" alt="...">
+        <h4 class="text-success">Open Job Positions</h4>
+      </div>
+
+      <div class="row g-2 filters mb-4">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Job Title">
+        </div>
+        <div class="col-md-4">
+          <select class="form-select">
+            <option>Select Category</option>
+            <option value="">UI & UX Designer</option>
+            <option value="">Wordpress Developer</option>
+            <option value="">Apps Developer</option>
+          </select>
+        </div>
+        
+        <div class="col-md-2 d-flex gap-2">
+          <button class="btn btn-primary w-50">Submit</button>
+          <button class="btn btn-light w-50 text-danger">Reset</button>
+        </div>
+      </div>
+
+      <!-- Job Cards -->
+      <div class="job-box">
+        <div class="job-info">
+          <h5>UX Researcher</h5>
+          <p><i class="bi bi-briefcase-fill"></i> Hi-Tech IT Institute - Lakshmipur</p>
+        </div>
+        <div class="text-center">
+          <p>01 Jun, 2025</p>
+          <small>Vacancies: 2</small>
+        </div>
+        <button class="apply-btn">Apply</button>
+      </div>
+
+      <div class="job-box">
+        <div class="job-info">
+          <h5>Wordpress Developer</h5>
+          <p><i class="bi bi-briefcase-fill"></i> Shifty Innovation - Dhaka</p>
+        </div>
+        <div class="text-center">
+          <p>10 Jun, 2025</p>
+          <small>Vacancies: 1</small>
+        </div>
+        <button class="apply-btn">Apply</button>
+      </div>
+
+    </div>
+
+    <!-- Vendor Start -->
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5 mb-5">
+            <div class="bg-white">
+                <div class="owl-carousel vendor-carousel">
+                    <img src="assets/img/rsz_hi-tech.png" alt="" class="img-fluid">
+                    <img src="assets/img/rsz_olive.png" alt="" class="img-fluid">
+                    <img src="assets/img/rsz_fiverr.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Vendor End -->
+    
+    
+    <footer class="footer-wave pt-5">
+        <div class="container text-white">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-md-4 mb-4">
+            <div class="d-flex align-items-center mb-2">
+                <!-- Logo placeholder -->
+                <img src="assets/img/footer-logo.png" alt="Logo" style="height:40px;" class="me-2" /> 
+            </div>
+            <p>
+                Shifty helps businesses to build and grow with versatile 
+                software solutions and services.
+            </p>
+            <!-- Social icons -->
+            <div class="d-flex">
+                <a href="https://www.facebook.com/profile.php?id=61575630226553" target="_blank" class="me-3 text-white" style="text-decoration:none;">
+                <i class="ph ph-facebook-logo" style="font-size:32px; text-decoration:none;"></i>
+                </a>
+                <a href="https://www.linkedin.com/company/shifty-innovation/" target="_blank" class="me-3 text-white" style="text-decoration:none;">
+                <i class="ph ph-linkedin-logo" style="font-size:32px; text-decoration:none;"></i>
+                </a>
+                <a href="javascript:void(0)" class="me-3 text-white" style="text-decoration:none;">
+                <i class="ph ph-x-logo" style="font-size:32px; text-decoration:none;"></i>
+                </a>
+                <a href="https://www.youtube.com/@shiftyinnovation" target="_blank" class="text-white" style="text-decoration:none;">
+                <i class="ph ph-youtube-logo" style="font-size:32px; text-decoration:none;"></i>
+                </a>
+            </div>
+            </div>
+            <!-- Company Links -->
+            <div class="col-md-2 mb-4">
+            <h6 class="fw-bold">Company</h6>
+            <ul class="list-unstyled">
+                <li><a href="about.html" class="text-white text-decoration-none">About Us</a></li>
+                <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+                <li><a href="service-policy.html.html" class="text-white text-decoration-none">Service Policy</a></li>
+                <li><a href="privacy-policy.html" class="text-white text-decoration-none">Privacy Policy</a></li>
+            </ul>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-2 mb-4">
+            <h6 class="fw-bold">Quick Links</h6>
+            <ul class="list-unstyled">
+                <li><a href="javascript:void(0)" class="text-white text-decoration-none">Products</a></li>
+                <li><a href="javascript:void(0)" class="text-white text-decoration-none">Installation</a></li>
+                <li><a href="javascript:void(0)" class="text-white text-decoration-none">Customization</a></li>
+                <li><a href="javascript:void(0)" class="text-white text-decoration-none">Documentation</a></li>
+            </ul>
+            </div>
+            <!-- Contact Info -->
+            <div class="col-md-4 mb-4">
+            <h6 class="fw-bold">Contact Us</h6>
+            <p class="mb-1">
+                Level: 07, H: 110, R: 20, South Banasree, <br/>
+                Dhaka 1019, Bangladesh
+            </p>
+            <p class="mb-0">+8801787472354</p>
+            </div>
+        </div>
+        </div>
+        <!-- Footer bottom text (if you want) -->
+        <div class="text-center text-white py-3" style="opacity: 0.6;">
+        &copy; 2025 Shifty Innovation. All Rights Reserved.
+        </div>
+    </footer>
+    
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/lib/wow/wow.min.js"></script>
+    <script src="assets/lib/easing/easing.min.js"></script>
+    <script src="assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="assets/lib/counterup/counterup.min.js"></script>
+    <script src="assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- -- Custom JS -- -->
+    <script src="assets/main.js"></script>
+</body>
+</html>

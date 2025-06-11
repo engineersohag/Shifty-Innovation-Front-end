@@ -11,6 +11,9 @@ body {
 a{
     text-decoration: none;
 }
+.dropdown-item.active{
+    background: var(--text-success)!important;
+}
 
 /*** Spinner ***/
 .spinner {
@@ -457,7 +460,32 @@ a{
 .pagination a:hover{
     color: var(--dark);
 }
-    
+
+.testimonial-carousel .project-test-link{
+    width: 100%;
+    height: 0%;
+    background: rgba(44, 170, 77, .5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.testimonial-carousel .project-test-link a{
+    display: none;
+    font-size: 25px;
+    color: #fff;
+    transition: .5s;
+}
+.testimonial-carousel .testimonial-item:hover .project-test-link{
+    height: 100%;
+}
+ 
+.testimonial-carousel .testimonial-item:hover .project-test-link a{
+    display: inline-block;
+}   
     
 .footer-wave {
   position: relative;

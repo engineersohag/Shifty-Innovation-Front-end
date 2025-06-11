@@ -72,3 +72,38 @@
     
 })(jQuery);
 
+function sendToWhatsapp(){
+    const number = +8801744564310;  
+
+    let UserName = document.getElementById('name').value;
+    let UserEmail = document.getElementById('email').value;
+    let Subject = document.getElementById('subject').value;
+    let UserMessage = document.getElementById('message').value;
+
+    let url = "https://wa.me/" + number + "?text="
+    + "Name : " + UserName + "%0a"
+    + "Email : " + UserEmail + "%0a"
+    + "Subject : " + Subject + "%0a"
+    + "Message : " + UserMessage + "%0a%0a";
+
+    window.open(url, '_blank').focus();
+
+}
+
+function sendRequestByWhatsapp(){
+    const WhatAppNum = +8801744564310;  
+
+    let name = document.getElementById('fullName').value;
+    let email = document.getElementById('email').value;
+    let phoneNum = document.getElementById('phoneNumber').value;
+    let projectDetails = document.getElementById('projectDetails').value;
+
+    let url = "https://wa.me/" + WhatAppNum + "?text="
+    + "Name : " + name + "%0a"
+    + "Email : " + email + "%0a"
+    + "Phone : " + phoneNum + "%0a"
+    + "Project Details : " + projectDetails + "%0a%0a";
+
+    window.open(url, '_blank').focus();
+}
+
